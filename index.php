@@ -1,7 +1,6 @@
 <?php include 'components/games.php'; ?>
 <!doctype html>
 <html lang="en">
-  <?php print_r($_SERVER); ?>
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
