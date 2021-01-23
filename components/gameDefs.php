@@ -1,11 +1,5 @@
 <?
 class GameDef {
-    public string $name;
-    public string $image_src;
-    public string $description;
-    public string $play_link;
-    public string $image_source;
-
     function __construct($name, $image_src, $description, $play_link, $github_link) {
         $this->name = $name;
         $this->image_src = $image_src;
