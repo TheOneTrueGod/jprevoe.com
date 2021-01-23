@@ -1,7 +1,10 @@
 <?php 
     $gameLocations = array(
-        '/spaceships' => 'SpaceShips/index.html'
+        '/game/spaceships' => 'SpaceShips/index.html'
     );
+    print_r($SERVER['REQUEST_URI']);
+    ?> <br/> <?
+    print_r($gameLocations);
 ?>
 <!doctype html>
 <html lang="en">
