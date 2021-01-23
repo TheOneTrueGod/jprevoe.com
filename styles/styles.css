@@ -1,0 +1,24 @@
+.pageBackground {
+    background: #1C3590;
+    margin-top: 20px;
+}
+
+.contentContainer {
+    background: #8D94BA;
+    border: 1px solid #A0CFD3;
+    border-radius: 1rem;
+}
+
+.cardImageContainer {
+    width: 100%;
+    padding-top: 73%;
+    position: relative;
+    overflow: hidden;
+    background: black;
+}
+
+.cardImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
