@@ -14,7 +14,7 @@
   </head>
   <body class="pageBackground">
     <div class="container contentContainer">
-      <div class="row mb-3">
+      <div class="row mb-3 mt-3">
         <div class="col">
           <h1 class="text-center">Games and Projects</h1>
           <h2 class="text-center">jprevoe.com</h2>
