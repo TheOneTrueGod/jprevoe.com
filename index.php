@@ -1,8 +1,7 @@
-<?php echo $_SERVER['PATH_INFO'] ?>
-
 <?php include 'components/games.php'; ?>
 <!doctype html>
 <html lang="en">
+  <?php print_r($_SERVER); ?>
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
