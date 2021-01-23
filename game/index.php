@@ -1,7 +1,7 @@
 <?php 
     $gameLocations = array(
         '/spaceships' => 'SpaceShips/index.html'
-    )
+    );
 ?>
 <!doctype html>
 <html lang="en">
@@ -26,7 +26,7 @@
       </div>
       <div style="max-width: 800px; margin: auto;">
         <?php
-            $path = $_SERVER['PATH_INFO'];
+            $path = $_SERVER['REQUEST_URI'];
             if (!array_key_exists($path, $gameLocations)) {
                 ?>Game not found!<?
             } else {
