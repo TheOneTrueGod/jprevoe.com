@@ -21,7 +21,7 @@ function getGameDefs() {
             "Space Ships",
             "assets/spaceships.png",
             "Choose your ships wisely as they engage in an auto battle against an AI opponent",
-            "/mygames/SpaceShips",
+            "/games/SpaceShips",
             "https://github.com/TheOneTrueGod/SpaceShips"
         )
     );
