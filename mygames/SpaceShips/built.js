@@ -559,7 +559,7 @@ var Textures = {
     height: 23,
   },
   projectiles: {
-    texture: PIXI.Texture.fromImage(assetPath + '/assets/projectiles.png'),
+    texture: PIXI.Texture.fromImage(assetPath + '/assets/Projectiles.png'),
     width: 11,
     height: 16,
   },
