@@ -1,10 +1,7 @@
 <?php 
     $gameLocations = array(
-        '/game/spaceships' => 'SpaceShips/index.html'
+        '/game/spaceships' => 'game/spaceships.php'
     );
-    print_r($SERVER['REQUEST_URI']);
-    ?> <br/> <?
-    print_r($gameLocations);
 ?>
 <!doctype html>
 <html lang="en">
@@ -16,7 +13,7 @@
     <!-- Bootstrap CSS -->
     <link href="/packages/bootstrap/bootstrap.css" rel="stylesheet">
     <link href="/styles/styles.css" rel="stylesheet">
-
+    
     <title>Games and Projects - jprevoe.com</title>
   </head>
   <body class="pageBackground">
@@ -33,7 +30,10 @@
             if (!array_key_exists($path, $gameLocations)) {
                 ?>Game not found!<?
             } else {
-                include 'jprevoe.com/' . $gameLocations[$path];
+                ?>
+                    <script type="text/javascript" src="/JeremyLibs/SpaceShips/lib/pixi.js"></script>
+                    <script type="text/javascript" src="/JeremyLibs/SpaceShips/dist/built.js"></script>
+                <?
             }
         ?>
       </div>
