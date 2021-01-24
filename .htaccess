@@ -4,10 +4,10 @@ RewriteEngine On
 RewriteBase /
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(?!game/)(.+)$ /index.php?u=$1 [NC,QSA,L]
+RewriteRule ^(?!game(s?)/)(.+)$ /index.php [NC,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^games/SpaceShips/(.+)$ /games/SpaceShips/index.php?u=$1 [NC,QSA,L]
+RewriteRule ^games/SpaceShips/(.+)$ /games/SpaceShips/index.php [NC,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^game/(.+)$ /game/index.php?u=$1 [NC,QSA,L]
+RewriteRule ^game/(.+)$ /game/index.php [NC,L]
