@@ -4,7 +4,7 @@ RewriteEngine On
 RewriteBase /
 
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(?!(game|mygames)\/)(.+)$ /index.php [NC,L]
+RewriteRule ^(?!(game|mygames|posts)\/)(.+)$ /index.php [NC,L]
 
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^game/(.+)$ /game/index.php [NC,L]
