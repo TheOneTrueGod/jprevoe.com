@@ -1,4 +1,5 @@
 <?php include 'components/games.php'; ?>
+<?php include 'components/blogposts.php'; ?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -21,9 +22,19 @@
         </div>
       </div>
       <div style="max-width: 800px; margin: auto;">
-        <?php 
-          renderAllGames();
-        ?>
+        <div class="row">
+          <div class="col-3">
+            <div class="card" style="padding: 8px;">
+              <h3 class="text-center">Blog Posts</h3>
+              <?php renderAllBlogPosts(); ?>
+            </div>
+          </div>
+          <div class="col-9">
+            <?php 
+              renderAllGames();
+            ?>
+          </div>
+        </div>
       </div>
     </div>
 

@@ -1,5 +1,8 @@
-.pageBackground {
+body {
     background: #1C3590;
+}
+
+.pageBackground {
     margin-top: 20px;
 }
 
@@ -21,4 +24,12 @@
     position: absolute;
     top: 0;
     left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pageHeader {
+    background: #8D94BA;
 }
