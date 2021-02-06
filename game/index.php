@@ -24,7 +24,7 @@
           <h2 class="text-center">jprevoe.com</h2>
         </div>
       </div>
-      <div style="max-width: 800px; margin: auto;">
+      <div style="max-width: 1024px; margin: auto;">
         <?php
             $path = $_SERVER['REQUEST_URI'];
             if (!array_key_exists($path, $gameLocations)) {

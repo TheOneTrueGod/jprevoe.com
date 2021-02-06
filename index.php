@@ -21,7 +21,7 @@
           <h2 class="text-center">jprevoe.com</h2>
         </div>
       </div>
-      <div style="max-width: 800px; margin: auto;">
+      <div style="max-width: 1024px; margin: auto;">
         <div class="row">
           <div class="col-3">
             <div class="card" style="padding: 8px;">

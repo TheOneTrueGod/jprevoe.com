@@ -26,7 +26,7 @@
             <a href="/"><h4>< jprevoe.com</h4></a>
         </div>
         <div class="pageBackground blogpost">
-            <div class="container contentContainer mb-3 pb-3">
+            <div class="container contentContainer mb-3 pt-3 pb-3">
                 <div style="max-width: 800px; margin: auto;">
                     <h1 class="text-center"><?php echo $blogPost->name?></h1>
                     <?php include $blogPost->file; ?>
