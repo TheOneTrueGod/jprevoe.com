@@ -32,6 +32,8 @@ function renderGame($game_def) {
                 <div class="col-6">
                     <?php if ($game_def->play_link) { ?>
                         <a href="<? echo $game_def->play_link ?>" class="btn btn-primary">Play</a>
+                    <?php } else if ($game_def->download_link) {?>
+                        <a href="<? echo $game_def->download_link ?>" class="btn btn-primary">Download</a>
                     <?php } ?>
                 </div>
                 <div class="col-6">
