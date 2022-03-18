@@ -19,6 +19,14 @@ function getGameDefs() {
             "",
             "https://github.com/TheOneTrueGod/Reflectiles"
         ),
+        'gooravity' => new GameDef(
+            "Gooravity",
+            "assets/Gooravity.png",
+            "Use the power of gravity to platform your way to the exit",
+            "/mygames/Gooravity",
+            "",
+            "https://github.com/TheOneTrueGod/StickyTheGame"
+        ),
         'zombies' => new GameDef(
             "Zombies",
             "assets/zombies.png",
@@ -34,14 +42,6 @@ function getGameDefs() {
             "/mygames/SpaceShips",
             "",
             "https://github.com/TheOneTrueGod/SpaceShips"
-        ),
-        'gooravity' => new GameDef(
-            "Gooravity",
-            "assets/Gooravity.png",
-            "Use the power of gravity to platform your way to the exit",
-            "/mygames/Gooravity",
-            "",
-            "https://github.com/TheOneTrueGod/StickyTheGame"
         ),
     );
 }
