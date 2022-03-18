@@ -1,0 +1,4 @@
+
+class Gravity {
+  calculateVelocity;
+}
