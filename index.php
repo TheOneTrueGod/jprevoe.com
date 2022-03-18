@@ -22,14 +22,14 @@
         </div>
       </div>
       <div style="max-width: 1024px; margin: auto;">
-        <div class="row">
-          <div class="col-3">
+        <div class="row entryContainer">
+          <div class="col-md-3" style="margin-bottom: 8px;">
             <div class="card" style="padding: 8px;">
               <h3 class="text-center">Blog Posts</h3>
               <?php renderAllBlogPosts(); ?>
             </div>
           </div>
-          <div class="col-9">
+          <div class="col-md-9">
             <?php 
               renderAllGames();
             ?>

@@ -8,7 +8,7 @@ function renderAllGames() {
             ?><div class="row"><?
         }
         ?>
-            <div class="col-6">
+            <div class="col-sm-6">
                 <?php renderGame($game_def); ?>
             </div>
         <?php
