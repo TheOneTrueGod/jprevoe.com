@@ -27,14 +27,6 @@ function getGameDefs() {
             "",
             "https://github.com/TheOneTrueGod/StickyTheGame"
         ),
-        'zombies' => new GameDef(
-            "Zombies",
-            "assets/zombies.png",
-            "Fight your way through hordes of zombies!",
-            "",
-            "/downloads/Zombies.zip",
-            "https://github.com/TheOneTrueGod/Zombies"
-        ),
         'spaceships' => new GameDef(
             "Space Ships",
             "assets/spaceships.png",
@@ -42,6 +34,22 @@ function getGameDefs() {
             "/mygames/SpaceShips",
             "",
             "https://github.com/TheOneTrueGod/SpaceShips"
+        ),
+        'fluxIdle' => new GameDef(
+            "Flux Idle",
+            "assets/fluxidle.png",
+            "Harvest energy and upgrade buildings in this idle game",
+            "http://fluxidle.jprevoe.com",
+            "",
+            "https://github.com/TheOneTrueGod/idleGenerator"
+        ),
+        'zombies' => new GameDef(
+            "Zombies",
+            "assets/zombies.png",
+            "Fight your way through hordes of zombies!",
+            "",
+            "/downloads/Zombies.zip",
+            "https://github.com/TheOneTrueGod/Zombies"
         ),
     );
 }
