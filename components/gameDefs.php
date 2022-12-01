@@ -51,6 +51,14 @@ function getGameDefs() {
             "/downloads/Zombies.zip",
             "https://github.com/TheOneTrueGod/Zombies"
         ),
+        'blindEDH' => new GameDef(
+            "Blind EDH",
+            "assets/magicPile.jpg",
+            "Each player gets a random EDH deck, and they aren't told what's in it",
+            "/mygames/RandomEDH",
+            "",
+            ""
+        )
     );
 }
 ?>
