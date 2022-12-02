@@ -51,6 +51,7 @@ $allDecks = array(
     new Deck("Kinnan", "006kinnan", array("")),
     new Deck("Yisan", "007yisan", array("")),
     new Deck("Edric", "008edric", array("")),
+    new Deck("Yuriko", "009yuriko", array("")),
 );
 
 function fisherYatesShuffle(&$items, $seed)
