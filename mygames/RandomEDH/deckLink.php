@@ -20,13 +20,20 @@ class Deck {
                     decklists[<?php echo $deckName ?>] = `<?php echo $this->decklist; ?>`;
                 }
                 var <?php echo $onClickFunction ?> = <?php echo $onClickFunction ?> ||
-                function() {
-                    navigator.clipboard.writeText(decklists[<?php echo $deckName?>]).then(function() {
-                        alert('Copied decklist to clipboard');
-                    }, function(err) {
-                        alert('Could not copy decklist to clipboard');
-                    });
-                    return false;
+                function unsecuredCopyToClipboard() {
+                    const textArea = document.createElement("textarea");
+                    textArea.value = decklists[<?php echo $deckName?>];
+                    document.body.appendChild(textArea);
+                    textArea.focus();
+                    textArea.select();
+                    try {
+                        document.execCommand('copy');
+                        alert("Copied to clipboard");
+                    } catch (err) {
+                        console.error('Unable to copy to clipboard', err);
+                        alert("Failed to copy to clipboard");
+                    }
+                    document.body.removeChild(textArea);
                 }
             </script>
             <a href="#" onClick="<?php echo $onClickFunction; ?>(); return false;"><h3>📋<? echo $this->name ?></h3></a>
