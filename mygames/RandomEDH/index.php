@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <? $path = $_SERVER['REQUEST_URI']; ?>
 <?php include 'deckLink.php'; ?>
+<?php include 'sets.php'; ?>
 <?php
     $seed = $_GET["seed"];
     $set = $_GET["set"];
-    $decks = pickFourDecks($seed, $set);
+    $decks = pickFourDecksFromSet($seed, $set);
 
     $allSets = getAllSets();
     $setCount = count($allSets);
@@ -54,7 +55,8 @@ The player jumps around and manipulates gravity to collect keys and get to the e
                 <div class="card descriptionRow">
                     Welcome to the blind random EDH deck picker!<br/>
                     This generates a random deck for each player, and doesn't tell them what's in it or how to play it.<br/><br/>
-                    Click "new game", then send the URL to your friends.  Each player should click the deck name to copy their decklist to their clipboard, and then paste it into cockatrice.<br/>
+                    Click "new game", then send the URL to your friends.  Each player should click the deck name to copy their decklist to their clipboard, and then paste it into cockatrice.<br/><br/>
+                    It's up to you how you want to divide up the decks.  Each player picks.  Loser picks.  Everyone chooses a player number before the randomization.  Whatever you like!<br/>
                     <div class='centerChildren'>
                         <form>
                             <input type="hidden" name="seed" value="<?php echo rand() ?>" />
