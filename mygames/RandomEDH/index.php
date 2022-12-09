@@ -3,7 +3,11 @@
 <?php include 'deckLink.php'; ?>
 <?php
     $seed = $_GET["seed"];
-    $decks = pickFourDecks($seed);
+    $set = $_GET["set"];
+    $decks = pickFourDecks($seed, $set);
+
+    $allSets = getAllSets();
+    $setCount = count($allSets);
 ?>
 <!--
 Our game is Gooravity
@@ -29,6 +33,12 @@ The player jumps around and manipulates gravity to collect keys and get to the e
             .descriptionRow {
                 padding: 8px;
             }
+
+            .centerChildren {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
         </style>
     </head>
 
@@ -45,20 +55,36 @@ The player jumps around and manipulates gravity to collect keys and get to the e
                     Welcome to the blind random EDH deck picker!<br/>
                     This generates a random deck for each player, and doesn't tell them what's in it or how to play it.<br/><br/>
                     Click "new game", then send the URL to your friends.  Each player should click the deck name to copy their decklist to their clipboard, and then paste it into cockatrice.<br/>
-                    <div style="margin:auto;"><a href="/mygames/RandomEDH?seed=<?php echo rand() ?>">New Game</a></div>
+                    <div class='centerChildren'>
+                        <form>
+                            <input type="hidden" name="seed" value="<?php echo rand() ?>" />
+                            <div>
+                                <b><label for="set">Choose a Set:</label></b>
+                                <select name="set" style="margin-bottom: 8px;">
+                                    <?php for ($i = 0; $i < $setCount; $i++) {
+                                        $setName = $allSets[$i];
+                                        ?><option <? if ($setName == $set) { echo "selected"; } ?> value="<? echo $setName; ?>"><? echo $setName; ?></option>
+                                    <? } ?>
+                                </select>
+                            </div>
+                            <div class='centerChildren'>
+                                <button href="/mygames/RandomEDH?seed=<?php echo rand() ?>">New Game</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <?php if ($seed !== NULL) { ?>
                 <div class="row deckRow">
                     <div class="col">
                         <div class="card" style="padding: 8px;">
                             <h3 class="text-center">Player 1</h3>
-                            <?php renderDeckLink($decks[0]); ?>
+                            <?php $decks[0]->renderDeck(); ?>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card" style="padding: 8px;">
                             <h3 class="text-center">Player 2</h3>
-                            <?php renderDeckLink($decks[1]); ?>
+                            <?php $decks[1]->renderDeck(); ?>
                         </div>
                     </div>
                 </div>
@@ -66,13 +92,13 @@ The player jumps around and manipulates gravity to collect keys and get to the e
                     <div class="col">
                         <div class="card" style="padding: 8px;">
                             <h3 class="text-center">Player 3</h3>
-                            <?php renderDeckLink($decks[2]); ?>
+                            <?php $decks[2]->renderDeck(); ?>
                         </div>
                     </div>
                     <div class="col">
                         <div class="card" style="padding: 8px;">
                             <h3 class="text-center">Player 4</h3>
-                            <?php renderDeckLink($decks[3]); ?>
+                            <?php $decks[3]->renderDeck(); ?>
                         </div>
                     </div>
                 </div>
