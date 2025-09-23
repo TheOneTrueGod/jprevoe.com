@@ -11,13 +11,13 @@ class GameDef {
 }
 function getGameDefs() {
     return array(
-        'reflectiles' => new GameDef(
-            "Reflectiles",
-            "assets/reflectiles.png",
-            "Defeat waves of enemies with 1-4 players in this cooperative game",
-            "http://reflectiles.jprevoe.com",
+        'Spacebound' => new GameDef(
+            "Spacebound",
+            "assets/spacebound.png",
+            "Requires 2 players.  Cooperate to make it through space!",
+            "https://spacebound.lomith.com/",
             "",
-            "https://github.com/TheOneTrueGod/Reflectiles"
+            "https://github.com/TheOneTrueGod/ToSpaceOrNot"
         ),
         'gooravity' => new GameDef(
             "Gooravity",
@@ -34,6 +34,14 @@ function getGameDefs() {
             "/mygames/SpaceShips",
             "",
             "https://github.com/TheOneTrueGod/SpaceShips"
+        ),
+        'reflectiles' => new GameDef(
+            "Reflectiles",
+            "assets/reflectiles.png",
+            "Defeat waves of enemies with 1-4 players in this cooperative game",
+            "http://reflectiles.jprevoe.com",
+            "",
+            "https://github.com/TheOneTrueGod/Reflectiles"
         ),
         /*'flowerPower' => new GameDef(
             "Flower Power",
