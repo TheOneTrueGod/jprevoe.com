@@ -4,9 +4,7 @@ var pixi = {};
 var world = {};
 
 function initializePixi() {
-  var container = document.createElement('div');
   const gameContainer = document.getElementById('gooravityContainer');
-  gameContainer.appendChild(container);
 
   Constants.AdjustScreenWidth(gameContainer);
   // Autodetect and create the renderer
@@ -19,7 +17,7 @@ function initializePixi() {
   // pixi.renderer.backgroundColor = 0x000022;
 
   // Append the renderer to the body of the page
-  container.appendChild(pixi.renderer.view);
+  gameContainer.appendChild(pixi.renderer.view);
 
   document.addEventListener("touchstart", onTouchStart, true);
   document.addEventListener("mousedown", onTouchStart, true);

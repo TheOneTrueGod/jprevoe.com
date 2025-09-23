@@ -9,11 +9,12 @@ The player jumps around and manipulates gravity to collect keys and get to the e
 <head>
     <meta charset="utf-8">
     <title>Gooravity</title>
+    <link href="/packages/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="/styles/styles.css" rel="stylesheet">
     <style>
         body {
           margin: 0;
           padding: 0;
-          background-color: #000;
           display: flex;
           align-items: center;
           flex-direction: column;
@@ -21,17 +22,19 @@ The player jumps around and manipulates gravity to collect keys and get to the e
 
         .credits {
           text-align: center;
-          color: #4d5eb3;
+          color: white;
         }
 
         .credits a {
-          color: #4d5eb3;
+          color: white;
         }
 
         #gooravityContainer {
           margin: 40px;
           width: 800px;
           height: 600px;
+          display: flex;
+          justify-content: center;
         }
 
         @media (max-width: 820px) {
@@ -55,7 +58,10 @@ The player jumps around and manipulates gravity to collect keys and get to the e
   <script type="text/javascript">
     window.assetPath = '<? echo $path ?>';
   </script>
-  <div id="gooravityContainer"></div>
+  <div class="container contentContainer pageBackground">
+    <h1 class="text-center mt-3 mb-0">Gooravity</h1>
+    <div id="gooravityContainer"></div>
+  </div>
   <div class="credits"> Created by <a href="https://www.linkedin.com/in/jeremy-prevoe-09011b1a/">Jeremy Prevoe</a>, <a>Arjuna Hayes</a>, <a>and Eugene Lee</a></div>
 </body>
 

@@ -35,14 +35,14 @@ function getGameDefs() {
             "",
             "https://github.com/TheOneTrueGod/SpaceShips"
         ),
-        'fluxIdle' => new GameDef(
-            "Flux Idle",
-            "assets/fluxidle.png",
-            "Harvest energy and upgrade buildings in this idle game",
+        /*'flowerPower' => new GameDef(
+            "Flower Power",
+            "assets/flowerPower.png",
+            "Grow flowers in this idle game",
             "http://fluxidle.jprevoe.com",
             "",
-            "https://github.com/TheOneTrueGod/idleGenerator"
-        ),
+            "https://github.com/TheOneTrueGod/FlowerPower"
+        ),*/
         'zombies' => new GameDef(
             "Zombies",
             "assets/zombies.png",

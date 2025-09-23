@@ -2860,7 +2860,7 @@ var renderer = PIXI.autoDetectRenderer(
   Constants.gameHeight,
   {backgroundColor : 0x222222}
 );
-document.body.appendChild(renderer.view);
+document.getElementById("gameContainer").appendChild(renderer.view);
 
 var Game = new GameObj();
 var mainScreen = (new MainScreen()).init();
