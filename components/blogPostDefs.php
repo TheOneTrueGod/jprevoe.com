@@ -1,4 +1,4 @@
-<?
+<?php
 class BlogPostDef {
     function __construct($name, $link, $file) {
         $this->name = $name;

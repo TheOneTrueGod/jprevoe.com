@@ -1,4 +1,4 @@
-<?
+<?php
 class GameDef {
     function __construct($name, $image_src, $description, $play_link, $download_link, $github_link) {
         $this->name = $name;

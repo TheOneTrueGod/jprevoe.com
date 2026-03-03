@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<? $path = $_SERVER['REQUEST_URI']; ?>
+<?php $path = $_SERVER['REQUEST_URI']; ?>
 <!--
 Our game is Gooravity
 It's a game about saving a goo lost in space
@@ -56,7 +56,7 @@ The player jumps around and manipulates gravity to collect keys and get to the e
 
 <body>
   <script type="text/javascript">
-    window.assetPath = '<? echo $path ?>';
+    window.assetPath = '<?php echo $path ?>';
   </script>
   <div class="container contentContainer pageBackground">
     <h1 class="text-center mt-3 mb-0">Gooravity</h1>
@@ -65,40 +65,40 @@ The player jumps around and manipulates gravity to collect keys and get to the e
   <div class="credits"> Created by <a href="https://www.linkedin.com/in/jeremy-prevoe-09011b1a/">Jeremy Prevoe</a>, <a>Arjuna Hayes</a>, <a>and Eugene Lee</a></div>
 </body>
 
-<script src="<? echo $path ?>/libraries/pixi.min.js"></script>
-<script src="<? echo $path ?>/libraries/howler.min.js"></script>
-<script src="<? echo $path ?>/libraries/viewportSize.min.js"></script>
+<script src="<?php echo $path ?>/libraries/pixi.min.js"></script>
+<script src="<?php echo $path ?>/libraries/howler.min.js"></script>
+<script src="<?php echo $path ?>/libraries/viewportSize.min.js"></script>
 
-<script src="<? echo $path ?>/lib/Constants.js"></script>
-<script src="<? echo $path ?>/lib/textures.js"></script>
+<script src="<?php echo $path ?>/lib/Constants.js"></script>
+<script src="<?php echo $path ?>/lib/textures.js"></script>
 
-<script src="<? echo $path ?>/lib/state/state.js"></script>
-<script src="<? echo $path ?>/lib/state/events.js"></script>
-<script src="<? echo $path ?>/lib/SoundController.js"></script>
+<script src="<?php echo $path ?>/lib/state/state.js"></script>
+<script src="<?php echo $path ?>/lib/state/events.js"></script>
+<script src="<?php echo $path ?>/lib/SoundController.js"></script>
 
-<script src="<? echo $path ?>/lib/geometry.js"></script>
+<script src="<?php echo $path ?>/lib/geometry.js"></script>
 
-<script src="<? echo $path ?>/lib/objects/Collectable.js"></script>
-<script src="<? echo $path ?>/lib/objects/Key.js"></script>
-<script src="<? echo $path ?>/lib/objects/Star.js"></script>
-<script src="<? echo $path ?>/lib/objects/ExitDoor.js"></script>
+<script src="<?php echo $path ?>/lib/objects/Collectable.js"></script>
+<script src="<?php echo $path ?>/lib/objects/Key.js"></script>
+<script src="<?php echo $path ?>/lib/objects/Star.js"></script>
+<script src="<?php echo $path ?>/lib/objects/ExitDoor.js"></script>
 
-<script src="<? echo $path ?>/lib/objects/Arrow.js"></script>
+<script src="<?php echo $path ?>/lib/objects/Arrow.js"></script>
 
-<script src="<? echo $path ?>/lib/particles/Particle.js"></script>
-<script src="<? echo $path ?>/lib/particles/Dirt.js"></script>
-<script src="<? echo $path ?>/lib/particles/JumpStar.js"></script>
-<script src="<? echo $path ?>/lib/particles/Background.js"></script>
-<script src="<? echo $path ?>/lib/particles/targeting.js"></script>
+<script src="<?php echo $path ?>/lib/particles/Particle.js"></script>
+<script src="<?php echo $path ?>/lib/particles/Dirt.js"></script>
+<script src="<?php echo $path ?>/lib/particles/JumpStar.js"></script>
+<script src="<?php echo $path ?>/lib/particles/Background.js"></script>
+<script src="<?php echo $path ?>/lib/particles/targeting.js"></script>
 
-<script src="<? echo $path ?>/lib/level.js"></script>
-<script src="<? echo $path ?>/lib/levels.js"></script>
-<script src="<? echo $path ?>/lib/world.js"></script>
-<script src="<? echo $path ?>/lib/character.js"></script>
+<script src="<?php echo $path ?>/lib/level.js"></script>
+<script src="<?php echo $path ?>/lib/levels.js"></script>
+<script src="<?php echo $path ?>/lib/world.js"></script>
+<script src="<?php echo $path ?>/lib/character.js"></script>
 
-<script src="<? echo $path ?>/lib/ui.js"></script>
-<script src="<? echo $path ?>/lib/ui/LevelCompleteDialog.js"></script>
-<script src="<? echo $path ?>/lib/ui/TutorialDialog.js"></script>
+<script src="<?php echo $path ?>/lib/ui.js"></script>
+<script src="<?php echo $path ?>/lib/ui/LevelCompleteDialog.js"></script>
+<script src="<?php echo $path ?>/lib/ui/TutorialDialog.js"></script>
 
-<script src="<? echo $path ?>/lib/main.js"></script>
+<script src="<?php echo $path ?>/lib/main.js"></script>
 </html>

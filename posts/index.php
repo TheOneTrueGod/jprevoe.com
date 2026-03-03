@@ -4,7 +4,7 @@
     $postId = substr($_SERVER['REQUEST_URI'], 7);
     $allBlogPosts = getBlogPostDefs();
     if (!array_key_exists($postId, $allBlogPosts)) {
-        ?> Blog post not found! <?
+        ?> Blog post not found! <?php
         return;
     }
     $blogPost = $allBlogPosts[$postId];

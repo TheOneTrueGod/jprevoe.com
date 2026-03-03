@@ -5,7 +5,7 @@ function renderAllGames() {
     $i = 0;
     foreach ($game_defs as $game_def) {
         if ($i % 2 === 0) {
-            ?><div class="row"><?
+            ?><div class="row"><?php
         }
         ?>
             <div class="col-sm-6">
@@ -13,7 +13,7 @@ function renderAllGames() {
             </div>
         <?php
         if ($i % 2 !== 0) {
-            ?></div><?
+            ?></div><?php
         }
         $i ++;
     }
@@ -27,25 +27,25 @@ function renderGame($game_def) {
         </div>
         <div class="card-body">
             <h5 class="card-title"><?php echo $game_def->name ?></h5>
-            <p><? echo $game_def->description ?></p>
+            <p><?php echo $game_def->description ?></p>
             <div class="row">
                 <div class="col-6">
                     <?php if ($game_def->play_link) { ?>
-                        <a href="<? echo $game_def->play_link ?>" class="btn btn-primary">Play</a>
+                        <a href="<?php echo $game_def->play_link ?>" class="btn btn-primary">Play</a>
                     <?php } else if ($game_def->download_link) {?>
-                        <a href="<? echo $game_def->download_link ?>" class="btn btn-primary">Download</a>
+                        <a href="<?php echo $game_def->download_link ?>" class="btn btn-primary">Download</a>
                     <?php } ?>
                 </div>
                 <div class="col-6">
                     <div class="d-flex flex-row-reverse">
                         <?php if ($game_def->github_link) { ?>
-                            <a href="<? echo $game_def->github_link ?>" class="btn btn-link card-link">Github</a>
+                            <a href="<?php echo $game_def->github_link ?>" class="btn btn-link card-link">Github</a>
                         <?php } ?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <?
+    <?php
 }
 ?>

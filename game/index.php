@@ -28,12 +28,12 @@
         <?php
             $path = $_SERVER['REQUEST_URI'];
             if (!array_key_exists($path, $gameLocations)) {
-                ?>Game not found!<?
+                ?>Game not found!<?php
             } else {
                 ?>
                     <script type="text/javascript" src="/JeremyLibs/SpaceShips/lib/pixi.js"></script>
                     <script type="text/javascript" src="/JeremyLibs/SpaceShips/dist/built.js"></script>
-                <?
+                <?php
             }
         ?>
       </div>

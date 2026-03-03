@@ -51,9 +51,9 @@ class Deck {
                     decklists[<?php echo $deckName; ?>] = `<?php echo $this->decklist; ?>`;
                 }
             </script>
-            <a href="#" onClick="onClickFunctions[<? echo $deckName ?>](); return false;"><h3>📋<? echo $this->name ?></h3></a>
+            <a href="#" onClick="onClickFunctions[<?php echo $deckName ?>](); return false;"><h3>📋<?php echo $this->name ?></h3></a>
         </div>
-        <?
+        <?php
     }
 }
 

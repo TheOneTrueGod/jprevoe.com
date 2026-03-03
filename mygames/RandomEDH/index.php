@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<? $path = $_SERVER['REQUEST_URI']; ?>
+<?php $path = $_SERVER['REQUEST_URI']; ?>
 <?php include 'deckLink.php'; ?>
 <?php include 'sets.php'; ?>
 <?php
@@ -65,8 +65,8 @@ The player jumps around and manipulates gravity to collect keys and get to the e
                                 <select name="set" style="margin-bottom: 8px;">
                                     <?php for ($i = 0; $i < $setCount; $i++) {
                                         $setName = $allSets[$i];
-                                        ?><option <? if ($setName == $set) { echo "selected"; } ?> value="<? echo $setName; ?>"><? echo $setName; ?></option>
-                                    <? } ?>
+                                        ?><option <?php if ($setName == $set) { echo "selected"; } ?> value="<?php echo $setName; ?>"><?php echo $setName; ?></option>
+                                    <?php } ?>
                                 </select>
                             </div>
                             <div class='centerChildren'>

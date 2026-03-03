@@ -1,4 +1,4 @@
-<? $path = $_SERVER['REQUEST_URI']; ?>
+<?php $path = $_SERVER['REQUEST_URI']; ?>
 <html>
   <head>
     <link href="/packages/bootstrap/bootstrap.css" rel="stylesheet">
@@ -6,7 +6,7 @@
   </head>
   <body>
     <script type="text/javascript">
-      window.assetPath = '<? echo $path ?>';
+      window.assetPath = '<?php echo $path ?>';
     </script>
     <div class="pageBackground">
       <div class="container contentContainer">
@@ -30,7 +30,7 @@
         width: fit-content;
       }
     </style>
-    <script type="text/javascript" src="<? echo $path; ?>/pixi.min.js"></script>
-    <script type="text/javascript" src="<?echo $path; ?>/built.js"></script>
+    <script type="text/javascript" src="<?php echo $path; ?>/pixi.min.js"></script>
+    <script type="text/javascript" src="<?php echo $path; ?>/built.js"></script>
   </body>
 </html>
